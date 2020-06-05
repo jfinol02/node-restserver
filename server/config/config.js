@@ -6,7 +6,14 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-    urlDB = "mongodb+srv://jfinol02:Kv3g9SE1DRMpIlgl@cluster0-v2pxs.mongodb.net/cafe?retryWrites=true&w=majority";
+    urlDB = process.env.MONGO_URI;
 }
 
+//Url de conexión
 process.env.URLDATABASE = urlDB;
+
+//Vencimiento de token
+process.env.CADUCIDAD_TOKEN = process.env.CADUCIDAD_TOKEN_RPOD || '1h';
+
+//SEED de autenticación
+process.env.SEED = process.env.SEED || 'sdff*d}d+d{f435ewfw';
