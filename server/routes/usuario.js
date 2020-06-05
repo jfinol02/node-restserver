@@ -24,10 +24,10 @@ app.get('/usuario', function(req, res) {
 
             Usuario.count({ estado: true }, (err, conteo) => {
                 res.json({
+                    author: 'Jesus E. Finol',
                     usuarios: usuarios,
                     cantidad: conteo,
-                    ok: true,
-                    author: 'Jesus E. Finol'
+                    ok: true
                 });
             });
         });
