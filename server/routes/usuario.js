@@ -26,7 +26,8 @@ app.get('/usuario', function(req, res) {
                 res.json({
                     usuarios: usuarios,
                     cantidad: conteo,
-                    ok: true
+                    ok: true,
+                    author: 'Jesus E. Finol'
                 });
             });
         });
@@ -54,7 +55,9 @@ app.post('/usuario', function(req, res) {
 
         res.json({
             usuario: usuarioDB,
-            ok: true
+            ok: true,
+            author: 'Jesus E. Finol',
+            mensaje: 'registro creado de forma satisfactoria'
         })
     });
 });
@@ -75,7 +78,9 @@ app.put('/usuario/:id', function(req, res) {
 
         res.json({
             usuario: usuarioDB,
-            ok: true
+            ok: true,
+            author: 'Jesus E. Finol',
+            mensaje: 'registro actualizado de forma satisfactoria'
         });
     });
 });
@@ -107,7 +112,9 @@ app.delete('/usuario/:id', function(req, res) {
 
         res.json({
             usuario: usuarioBorrado,
-            ok: true
+            ok: true,
+            author: 'Jesus E. Finol',
+            mensaje: 'registro eliminado de forma satisfactoria'
         });
     });
 });
