@@ -48,6 +48,6 @@ app.post('/login', (req, res) => {
             ok: true
         });
     });
-})
+});
 
 module.exports = app;
