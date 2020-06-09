@@ -21,6 +21,7 @@ let verificarToken = (req, res, next) => {
 }
 
 
+//Verificacion de rol
 let veificaAdminRole = (req, res, next) => {
     let usuario = req.usuario;
 

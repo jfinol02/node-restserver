@@ -17,3 +17,6 @@ process.env.CADUCIDAD_TOKEN = process.env.CADUCIDAD_TOKEN_RPOD || '1h';
 
 //SEED de autenticación
 process.env.SEED = process.env.SEED || 'sdff*d}d+d{f435ewfw';
+
+//Client ID de google 
+process.env.GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '56523024150-4euspdt6r3uhhujna20f3drv3p30f91v.apps.googleusercontent.com';
