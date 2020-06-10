@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'dev') {
 process.env.URLDATABASE = urlDB;
 
 //Vencimiento de token
-process.env.CADUCIDAD_TOKEN = process.env.CADUCIDAD_TOKEN_RPOD || '1h';
+process.env.CADUCIDAD_TOKEN = process.env.CADUCIDAD_TOKEN_RPOD || '4h';
 
 //SEED de autenticación
 process.env.SEED = process.env.SEED || 'sdff*d}d+d{f435ewfw';
